@@ -15,5 +15,23 @@ namespace FormsApp1
         {
             InitializeComponent();
         }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            var login = new Form_Login();
+            login.ShowDialog();
+        }
+
+        private void buttonAddPerson_Click(object sender, EventArgs e)
+        {
+            var add = new Form_AddPerson();
+            add.ShowDialog();
+        }
+
+        private void buttonRemovePerson_Click(object sender, EventArgs e)
+        {
+            var remove = new Form_RemovePerson();
+            remove.ShowDialog();
+        }
     }
 }
